@@ -49,6 +49,49 @@
                 <p class="text-slate-300 text-lg leading-relaxed">
                     Passionnée par l'extraction de connaissances et le Machine Learning. Je m'investis dans la conception de modèles prédictifs et de solutions intelligentes pour transformer des données complexes en leviers de décision.
                 </p>
+                <div class="mt-12 space-y-4">
+    <h3 class="text-xl font-bold text-white mb-6">Mon Parcours Académique</h3>
+    
+    <div class="border border-slate-700 rounded-xl bg-slate-800/50 overflow-hidden cursor-pointer transition-all duration-300 hover:border-cyan-500" onclick="toggleTimeline('ensiasd')">
+        <div class="p-6 flex justify-between items-center">
+            <div>
+                <span class="text-cyan-400 font-bold text-sm">2024 - Présent</span>
+                <h4 class="text-lg font-bold">Cycle d'Ingénieur | ENSIASD Taroudant</h4>
+            </div>
+            <i class="fas fa-chevron-down text-cyan-400 transition-transform" id="icon-ensiasd"></i>
+        </div>
+        <div id="content-ensiasd" class="hidden px-6 pb-6 pt-2 border-t border-slate-700 bg-slate-900/50">
+            <p class="text-slate-400 text-sm mb-3">Technologies & Domaines maîtrisés :</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-cyan-900/30 text-cyan-200 border border-cyan-700/50 rounded-full text-xs">Big Data (Hadoop)</span>
+                <span class="px-3 py-1 bg-cyan-900/30 text-cyan-200 border border-cyan-700/50 rounded-full text-xs">Machine Learning</span>
+                <span class="px-3 py-1 bg-cyan-900/30 text-cyan-200 border border-cyan-700/50 rounded-full text-xs">Deep Learning</span>
+                <span class="px-3 py-1 bg-cyan-900/30 text-cyan-200 border border-cyan-700/50 rounded-full text-xs">Cloud Computing</span>
+                <span class="px-3 py-1 bg-cyan-900/30 text-cyan-200 border border-cyan-700/50 rounded-full text-xs">BI (Power BI)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl bg-slate-800/50 overflow-hidden cursor-pointer transition-all duration-300 hover:border-blue-500" onclick="toggleTimeline('est')">
+        <div class="p-6 flex justify-between items-center">
+            <div>
+                <span class="text-blue-400 font-bold text-sm">2022 - 2024</span>
+                <h4 class="text-lg font-bold">DUT | EST Essaouira</h4>
+            </div>
+            <i class="fas fa-chevron-down text-blue-400 transition-transform" id="icon-est"></i>
+        </div>
+        <div id="content-est" class="hidden px-6 pb-6 pt-2 border-t border-slate-700 bg-slate-900/50">
+            <p class="text-slate-400 text-sm mb-3">Technologies & Domaines maîtrisés :</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-900/30 text-blue-200 border border-blue-700/50 rounded-full text-xs">SQL & Oracle</span>
+                <span class="px-3 py-1 bg-blue-900/30 text-blue-200 border border-blue-700/50 rounded-full text-xs">UML / Merise</span>
+                <span class="px-3 py-1 bg-blue-900/30 text-blue-200 border border-blue-700/50 rounded-full text-xs">Informatique Décisionnelle</span>
+                <span class="px-3 py-1 bg-blue-900/30 text-blue-200 border border-blue-700/50 rounded-full text-xs">Data Science Basics</span>
+            </div>
+        </div>
+    </div>
+</div>
+
                 
                 <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
                     <a href="Cv_AzizaAmakassou.pdf" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-6 py-3 rounded-full font-bold transition-all hover:scale-105 shadow-[0_0_15px_rgba(6,182,212,0.5)] flex items-center gap-2">
@@ -295,6 +338,16 @@
             <span>Arabe (Maternelle) - Français (Courant) - Anglais (Courant)</span>
         </p>
     </footer>
-
+<script>
+    function toggleTimeline(id) {
+        const content = document.getElementById('content-' + id);
+        const icon = document.getElementById('icon-' + id);
+        
+        // Bascule la visibilité
+        content.classList.toggle('hidden');
+        // Tourne l'icône
+        icon.classList.toggle('rotate-180');
+    }
+</script>
 </body>
 </html>
